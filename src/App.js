@@ -7,13 +7,7 @@ import QuestionAnswer from './components/QuestionAnswer/QuestionAnswer';
 
 function App() {
 
-  const [list, setList] = useState([]);
-
-  const handleAddToList = (exercise) => {
-    console.log(exercise);
-      const newList = [...list, exercise];
-        setList(newList);
-    };
+  
   return (
     <div>
       <Club></Club>
