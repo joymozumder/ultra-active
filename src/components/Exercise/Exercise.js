@@ -11,7 +11,7 @@ const Exercise = ({ exercise, handleAddToList }) => {
                 <p className="time-required">Time Required: {timeRequired}s</p>
             </div>
             <div className="card-footer border-0 bg-white mb-2">
-                <button className="w-100 btn btn-success" onClick={()=>{
+                <button className="w-100 btn btn-primary" onClick={()=>{
                     handleAddToList(exercise);
                 }}>Add to list</button>
             </div>

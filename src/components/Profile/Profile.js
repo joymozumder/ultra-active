@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Profile.css';
 import img from '../../images/45297900.jpg'
 import { addToDb } from '../../utilities/fakedb';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Profile = ({list, breakTime, handleBreakTime}) => {
 
@@ -12,6 +14,7 @@ const Profile = ({list, breakTime, handleBreakTime}) => {
         totalExerciseTime = totalExerciseTime + exercise.timeRequired;
     }
     
+    const notify = () => toast("Congratulations! You are done with your activity.");
     
     
     return (
@@ -85,8 +88,9 @@ const Profile = ({list, breakTime, handleBreakTime}) => {
         </div>
 
         <div>
-          <button className="btn btn-primary w-100">Activity Completed</button>
+          <button className="btn btn-primary w-100" onClick={notify}>Activity Completed</button>
         </div>
+        <ToastContainer />
       </div>
     );
 };

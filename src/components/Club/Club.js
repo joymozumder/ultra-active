@@ -33,7 +33,7 @@ const Club = () => {
     return (
       <div className="row">
         <div className="exercises-container col-12 col-md-9">
-          <h1 className="mb-3">Absolute Fitness</h1>
+          <h1 className="mb-3 text-primary fw-bold">Absolute Fitness</h1>
           <h5 className="mb-3">Select today’s exercise</h5>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {exercises.map((exercise) => (
