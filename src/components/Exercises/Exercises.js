@@ -11,7 +11,7 @@ const Exercises = () => {
     }, []);
 
     return (
-      <div className="exercises">
+      <div className="exercises col-md-9">
         <h1 className="mb-3">Absolute Fitness</h1>
         <h5 className="mb-3">Select today’s exercise</h5>
         <div className='row row-cols-1 row-cols-md-3 g-4'>
