@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './Exercises.css'
 const Exercises = () => {
     return (
-      <div>
+      <div className='exercises'>
         <h1>Absolute Fitness</h1>
       </div>
     );
