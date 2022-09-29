@@ -2,7 +2,12 @@ import React from 'react';
 import './Profile.css';
 import img from '../../images/45297900.jpg'
 
-const Profile = () => {
+const Profile = ({list}) => {
+    let totalExerciseTime = 0;
+    for(const exercise of list){
+        totalExerciseTime = totalExerciseTime + exercise.timeRequired;
+    }
+    console.log(list);
     return (
       <div className="col-md-3  p-3 profile">
         <div className="d-flex  align-items-center ">
@@ -65,7 +70,7 @@ const Profile = () => {
           <h5 className="mb-2">Exercise Details</h5>
           <div className="d-flex justify-content-between p-3 bg-white rounded mb-2">
             <p className="m-0">Exercise Time</p>
-            <p className="m-0">200 seconds </p>
+            <p className="m-0">{totalExerciseTime} seconds </p>
           </div>
           <div className="d-flex justify-content-between p-3 bg-white rounded mb-5">
             <p className="m-0">Break Time</p>
