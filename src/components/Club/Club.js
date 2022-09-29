@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { addToDb, getStoredBreakTime } from '../../utilities/fakedb';
 import Exercise from '../Exercise/Exercise';
 import Profile from '../Profile/Profile';
+import './Club.css';
 
 const Club = () => {
     const [exercises, setExercises] = useState([]);
@@ -31,7 +32,7 @@ const Club = () => {
     }, [exercises]);
     return (
       <div className="row">
-        <div className="exercises-container col-md-9">
+        <div className="exercises-container col-12 col-md-9">
           <h1 className="mb-3">Absolute Fitness</h1>
           <h5 className="mb-3">Select today’s exercise</h5>
           <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -44,7 +45,7 @@ const Club = () => {
             ))}
           </div>
         </div>
-        <div className="profile-container col-md-3">
+        <div className="profile-container col-12 col-md-3">
           <Profile
             list={list}
             breakTime={breakTime}

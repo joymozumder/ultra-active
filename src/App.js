@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Exercises from './components/Exercises/Exercises';
 import Profile from './components/Profile/Profile';
 import { useState } from 'react';
 import Club from './components/Club/Club';

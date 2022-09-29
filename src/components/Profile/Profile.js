@@ -15,7 +15,7 @@ const Profile = ({list, breakTime, handleBreakTime}) => {
     
     
     return (
-      <div className="p-3 profile">
+      <div className="p-3 profile h-100 pb-5">
         <div className="d-flex  align-items-center ">
           <img
             src={img}
@@ -53,7 +53,7 @@ const Profile = ({list, breakTime, handleBreakTime}) => {
 
         <div className="mt-4">
           <h5 className="mb-2">Add A Break</h5>
-          <div className="bg-white d-flex p-2 justify-content-around rounded">
+          <div className="bg-white d-flex flex-wrap p-3 justify-content-around rounded">
             <button onClick={()=>handleBreakTime(10)} className="btn rounded-circle bg-secondary text-white p-2">
               10s
             </button>
