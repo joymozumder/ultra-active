@@ -39,6 +39,19 @@ const Profile = () => {
                 </div>
             </div>
 
+            <div className='mt-3'>
+                <h5 className='mb-2'>Exercise Details</h5>
+                <div className='d-flex justify-content-between p-3 bg-white rounded mb-2'>
+                    <p className='m-0'>Exercise Time</p>
+                    <p className='m-0'>200 seconds </p>
+                </div>
+                <div className='d-flex justify-content-between p-3 bg-white rounded mb-5'>
+                    <p className='m-0'>Break Time</p>
+                    <p className='m-0'>15 seconds</p>
+                </div>
+                
+            </div>
+
         </div>
     );
 };
