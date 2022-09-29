@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Profile.css';
 import img from '../../images/45297900.jpg'
+import { addToDb } from '../../utilities/fakedb';
 
-const Profile = ({list}) => {
+const Profile = ({list, breakTime, handleBreakTime}) => {
+
+    
+
     let totalExerciseTime = 0;
     for(const exercise of list){
         totalExerciseTime = totalExerciseTime + exercise.timeRequired;
     }
-    console.log(list);
+    
+    
+    
     return (
-      <div className="col-md-3  p-3 profile">
+      <div className="p-3 profile">
         <div className="d-flex  align-items-center ">
           <img
             src={img}
@@ -48,19 +54,19 @@ const Profile = ({list}) => {
         <div className="mt-4">
           <h5 className="mb-2">Add A Break</h5>
           <div className="bg-white d-flex p-2 justify-content-around rounded">
-            <button className="btn rounded-circle bg-secondary text-white p-2">
+            <button onClick={()=>handleBreakTime(10)} className="btn rounded-circle bg-secondary text-white p-2">
               10s
             </button>
-            <button className="btn rounded-circle bg-secondary text-white p-2">
+            <button onClick={()=>handleBreakTime(20)} className="btn rounded-circle bg-secondary text-white p-2">
               20s
             </button>
-            <button className="btn rounded-circle bg-secondary text-white p-2">
+            <button onClick={()=>handleBreakTime(30)} className="btn rounded-circle bg-secondary text-white p-2">
               30s
             </button>
-            <button className="btn rounded-circle bg-secondary text-white p-2">
+            <button onClick={()=>handleBreakTime(40)} className="btn rounded-circle bg-secondary text-white p-2">
               40s
             </button>
-            <button className="btn rounded-circle bg-secondary text-white p-2">
+            <button onClick={()=>handleBreakTime(50)} className="btn rounded-circle bg-secondary text-white p-2">
               50s
             </button>
           </div>
@@ -74,7 +80,7 @@ const Profile = ({list}) => {
           </div>
           <div className="d-flex justify-content-between p-3 bg-white rounded mb-5">
             <p className="m-0">Break Time</p>
-            <p className="m-0">15 seconds</p>
+            <p className="m-0">{breakTime} seconds</p>
           </div>
         </div>
 

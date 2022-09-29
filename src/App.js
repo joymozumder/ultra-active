@@ -3,6 +3,7 @@ import './App.css';
 import Exercises from './components/Exercises/Exercises';
 import Profile from './components/Profile/Profile';
 import { useState } from 'react';
+import Club from './components/Club/Club';
 
 function App() {
 
@@ -14,9 +15,8 @@ function App() {
         setList(newList);
     };
   return (
-    <div className="row">
-      <Exercises handleAddToList={handleAddToList}></Exercises>
-      <Profile list = {list}></Profile>
+    <div>
+      <Club></Club>
     </div>
   );
 }
