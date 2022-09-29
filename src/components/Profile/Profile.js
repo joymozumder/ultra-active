@@ -4,7 +4,7 @@ import img from '../../images/45297900.jpg'
 
 const Profile = () => {
     return (
-        <div className="col-md-3 p-4 justify-content-center profile">
+        <div className="col-md-3  p-3 profile">
             <div className='d-flex  align-items-center '>
                 <img src={ img } alt="" className='rounded-circle img-fluid' id='profile-picture'></img>
                 <div className='ms-3'>
@@ -26,6 +26,17 @@ const Profile = () => {
                     <p className='m-0'>Age</p>
                 </div>
                 
+            </div>
+
+            <div className='mt-4'>
+                <h5 className='mb-2'>Add A Break</h5>
+                <div className='bg-white d-flex p-2 justify-content-around rounded'>
+                    <button className='btn rounded-circle bg-secondary text-white p-2'>10s</button>
+                    <button className='btn rounded-circle bg-secondary text-white p-2'>20s</button>
+                    <button className='btn rounded-circle bg-secondary text-white p-2'>30s</button>
+                    <button className='btn rounded-circle bg-secondary text-white p-2'>40s</button>
+                    <button className='btn rounded-circle bg-secondary text-white p-2'>50s</button>
+                </div>
             </div>
 
         </div>
