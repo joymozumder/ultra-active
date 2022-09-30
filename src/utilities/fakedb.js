@@ -12,6 +12,7 @@ const getStoredBreakTime = () =>{
         const breakTime = JSON.parse(storedBreakTime);
         return breakTime.time;
     }
+    return 0;
 }
 
 export { addToDb, getStoredBreakTime };

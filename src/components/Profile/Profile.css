@@ -1,5 +1,7 @@
 .profile{
-    background-color: #BBBFCA;
+    background-color: #D2DAFF;
+    position: sticky;
+    top: 0;
 }
 #profile-picture{
     width: 75px;

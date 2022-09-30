@@ -1,3 +1,5 @@
+import { faCoffee, faDumbbell } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { addToDb, getStoredBreakTime } from '../../utilities/fakedb';
 import Exercise from '../Exercise/Exercise';
@@ -33,7 +35,10 @@ const Club = () => {
     return (
       <div className="row">
         <div className="exercises-container col-12 col-md-9">
-          <h1 className="mb-3 text-primary fw-bold">Absolute Fitness</h1>
+          <h1 className="mb-3 text-primary fw-bold">
+            <FontAwesomeIcon className='me-3' icon={ faDumbbell} />
+            Absolute Fitness
+          </h1>
           <h5 className="mb-3">Select today’s exercise</h5>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {exercises.map((exercise) => (
@@ -45,7 +50,7 @@ const Club = () => {
             ))}
           </div>
         </div>
-        <div className="profile-container col-12 col-md-3">
+        <div className="profile-container col-12 col-md-3 ">
           <Profile
             list={list}
             breakTime={breakTime}

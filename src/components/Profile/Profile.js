@@ -14,11 +14,11 @@ const Profile = ({list, breakTime, handleBreakTime}) => {
         totalExerciseTime = totalExerciseTime + exercise.timeRequired;
     }
     
-    const notify = () => toast("Congratulations! You are done with your activity.");
+    const notify = () => toast("Congratulations! You have completed your activity.");
     
     
     return (
-      <div className="p-3 profile h-100 pb-5">
+      <div className="p-3 profile pb-5">
         <div className="d-flex  align-items-center ">
           <img
             src={img}
@@ -27,21 +27,21 @@ const Profile = ({list, breakTime, handleBreakTime}) => {
             id="profile-picture"
           ></img>
           <div className="ms-3">
-            <h5>Joy Mozumder</h5>
+            <h5 className='fw-bold'>Joy Mozumder</h5>
             <p className="mb-0">Chattogram</p>
           </div>
         </div>
         <div className="d-flex flex-wrap justify-content-around align-items-center bg-white mt-3 py-3 rounded">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <h4>
-              <strong>75</strong>
+              <strong>67</strong>
               <sub>kg</sub>{" "}
             </h4>
             <p className="m-0">Weight</p>
           </div>
           <div className="d-flex flex-column justify-content-center align-items-center">
             <h4>
-              <strong>6.5</strong>
+              <strong>5.5</strong>
             </h4>
             <p className="m-0">Height</p>
           </div>
