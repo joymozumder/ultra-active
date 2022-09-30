@@ -3,7 +3,7 @@ import React from 'react';
 const QuestionAnswer = () => {
     return (
         <div className=' my-5 '>
-            <h3 className='text-center'>Question & Answer</h3>
+            <h3 className='text-center mb-3'>Question & Answer</h3>
             <div className="col-12 col-md-8 mx-auto">
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item border mb-4">
@@ -42,13 +42,13 @@ const QuestionAnswer = () => {
                                 <button className="accordion-button fw-semibold px-4 py-4 collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    What are the uses of useEffect?
+                                    Where can we use useEffect without data loading?
                                 </button>
                             </h2>
                             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div className="accordion-body px-4">
-                                    The motivation behind the introduction of useEffect Hook is to eliminate the side-effects of using class-based components. For example, tasks like updating the DOM, fetching data from API end-points, setting up subscriptions or timers, etc can be lead to unwarranted side-effects. Since the render method is to quick to produce a side-effect one needs to use life cycle methods to observe the side effects. A functional React component uses props and/or state to calculate the output. If the functional component makes calculations that don't target the output value, then these calculations are named side-effects.
+                                    The useEffect Hook allows us to perform side effects in our components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. By using this Hook, we tell React that our component needs to do something after render. React will remember the function we passed, and call it later after performing the DOM updates. In this effect, we set the document title, but we could also perform data fetching or call some other imperative API. We can use useEffect for: validating input field, live filtering, trigger animation on new array value, update paragraph list on fetched API data update, etc.
                                 </div>
                             </div>
                         </div>
