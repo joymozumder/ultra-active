@@ -2,7 +2,7 @@
   {
     "id": "6335a8a1b4472fc601e2c6c3",
     "name": "Plank",
-    "timeRequired": 30,
+    "timeRequired": 50,
     "img": "https://de927adv5b23k.cloudfront.net/wp-content/uploads/2018/01/03184819/shutterstock_420977956-768x512.jpg"
   },
   {
@@ -14,25 +14,25 @@
   {
     "id": "6335a8a1d7ba83bc5018f6e6",
     "name": "Side Plank",
-    "timeRequired": 35,
+    "timeRequired": 40,
     "img": "https://de927adv5b23k.cloudfront.net/wp-content/uploads/2018/01/03184816/shutterstock_788852683-768x511.jpg"
   },
   {
     "id": "6335a8a1e86d65f710672669",
     "name": "Push-ups",
-    "timeRequired": 50,
+    "timeRequired": 60,
     "img": "https://de927adv5b23k.cloudfront.net/wp-content/uploads/2018/01/03184812/shutterstock_609502487-768x512.jpg"
   },
   {
     "id": "6335a8a1735b788887535a94",
     "name": "Bridge Posture",
-    "timeRequired": 40,
+    "timeRequired": 45,
     "img": "https://de927adv5b23k.cloudfront.net/wp-content/uploads/2018/01/03185610/shutterstock_610199816-768x512.jpg"
   },
   {
     "id": "6335a8a1de61d1782cb7cb56",
     "name": "Squats",
-    "timeRequired": 45,
+    "timeRequired": 60,
     "img": "https://de927adv5b23k.cloudfront.net/wp-content/uploads/2018/01/03184815/shutterstock_390236356-768x511.jpg"
   }
 ]
